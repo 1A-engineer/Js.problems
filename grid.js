@@ -160,6 +160,7 @@ if (givenNumbers18[0] >= 10) {
 } else {
   solution18 = "NO";
 }
+console.log(solution18);
 if (givenNumbers18[1] >= 10) {
   solution18 = "YES";
 } else {
@@ -170,29 +171,98 @@ console.log(solution18);
 // 19
 
 let print = "IOI";
-console.log(print)
+console.log(print);
 
+// /  <----------------------* Teams problems *------------------------> // /
 
-
-// /  Teams problems // /
-
-// 1 Define even or odd
+// 1. Define even or odd
 
 function classifyOddEven(arr) {
-  // Filter for even numbers
-  const evenNumbers = arr.filter(num => num % 2 === 0);
-  
-  // Filter for odd numbers
-  const oddNumbers = arr.filter(num => num % 2 !== 0);
-  
+  const evenNumbers = arr.filter((num) => num % 2 === 0);
+  const oddNumbers = arr.filter((num) => num % 2 !== 0);
+
   return { evenNumbers, oddNumbers };
 }
-
-// Example usage
 const tnumbers15 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const result = classifyOddEven(tnumbers15);
 
-console.log("Even Numbers:", result.evenNumbers); // [2, 4, 6, 8]
-console.log("Odd Numbers:", result.oddNumbers);   // [1, 3, 5, 7, 9]
+console.log("Even Numbers:", result.evenNumbers);
+console.log("Odd Numbers:", result.oddNumbers);
+
+// 2. Classify numbers as positive, negative, and zero.
+
+function classifyposnegzero(arr) {
+  const positivenumbers = arr.filter((num) => num > 0);
+  const negativenumbers = arr.filter((num) => num < 0);
+  const zeronumbers = arr.filter((num) => (num = 0));
+  return { positivenumbers, negativenumbers, zeronumbers };
+}
+
+const tnumbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+const result2 = classifyposnegzero(tnumbers2);
+
+console.log("Positive:", result2.positivenumbers);
+console.log("Negative:", result2.negativenumbers);
+
+// 3. Evaluate grades
+
+let grade = 90;
+if (grade >= 95) {
+  console.log("Your grade is 95");
+  console.log("You took +A");
+} else if (grade < 95 && grade >= 90) {
+  console.log("YOur grade is 90");
+  console.log("You take -A");
+}
+
+//  4. Franheit to Celsius
+
+function celsiusToFahrenheit(celsius) {
+  const fahrenheit = (celsius * 9) / 5 + 32;
+  return fahrenheit;
+}
+
+// Example usage:
+const celsius = 25;
+const fahrenheit = celsiusToFahrenheit(celsius);
+
+console.log(`${celsius}°C is equal to ${fahrenheit}°F`);
+
+// 5 Whether or not it could be traingle.
+
+const side1 = 15;
+const side2 = 23;
+const side3 = 40;
+if (side1 + side2 > side3 && side3 + side2 > side1 && side1 + side3 > side2) {
+  console.log("It could be traingle");
+} else {
+  console.log("It could not be traingle");
+}
+
+// 6 A discount calculator
+function adiscountcalculator(spending) {
+  const discount = spending * 0.1;
+
+  return discount;
+}
+
+const spending = 60;
+const discount = adiscountcalculator(spending);
+console.log("Your deserved discount:", discount);
+console.log("Total cost:", spending - discount);
 
 
+// 7 Leap year 
+
+function isLeapYear(year) {
+  if (year % 4 !== 0) return false; 
+  else if (year % 100 === 0) {
+    if (year % 400 === 0) return true; 
+    else return false; 
+  }
+  else return true; 
+}
+console.log(isLeapYear(2024)); // true
+console.log(isLeapYear(1900)); // false
+console.log(isLeapYear(2000)); // true
+ 
