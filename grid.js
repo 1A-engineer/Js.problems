@@ -221,11 +221,8 @@ function celsiusToFahrenheit(celsius) {
   const fahrenheit = (celsius * 9) / 5 + 32;
   return fahrenheit;
 }
-
-// Example usage:
 const celsius = 25;
 const fahrenheit = celsiusToFahrenheit(celsius);
-
 console.log(`${celsius}°C is equal to ${fahrenheit}°F`);
 
 // 5 Whether or not it could be traingle.
@@ -266,3 +263,87 @@ console.log(isLeapYear(2024)); // true
 console.log(isLeapYear(1900)); // false
 console.log(isLeapYear(2000)); // true
  
+// Add hundred n times.
+
+function add100NTimes(n) {
+  let result = 0;
+  for (let i = 0; i < n; i++) {
+      result += 100;
+  }
+  return result;
+}
+
+let n = parseInt("Enter the number of times to add 100:",);
+let result100 = add100NTimes(n);
+console.log(`100 added ${n} times is: ${result100}`);
+
+
+// Multiply number n times.
+function mltiplynumberntimes(numbern, davtalt) {
+  let result = 1;
+  for (let i = 0;  i < davtalt; i++) {
+    result *= numbern;
+  }
+  return  result;
+}
+let numbern = (5);
+let davtalt = (10);
+let resultn = mltiplynumberntimes(davtalt, numbern);
+console.log(`multiply 5 ${davtalt} times is: ${resultn}`);
+
+// n times of number A
+
+function ntimesofa(atoo, repeatn) {
+  let result = 1;
+  for (let i = 0; i < repeatn; i++) {
+    result *=atoo
+  }
+  return result;
+}
+
+let atoo = parseInt(10);
+let repeatn = parseInt(11);
+let result99 = ntimesofa(atoo, repeatn);
+console.log(`${atoo}'s  ${repeatn}st power is: ${result99}`)
+
+
+
+// Multiplication table
+
+function generateMultiplicationTable(number) {
+  for (let i = 1; i <= 10; i++) {
+      let result = number * i;
+      console.log(`${number} * ${i} = ${result}`);
+  }
+}
+let number = parseInt(5);
+generateMultiplicationTable(number);
+
+
+// Power of multiplication table
+
+function generatePowerTable(number, maxPower) {
+  for (let i = 1; i <= maxPower; i++) {
+      let result = Math.pow(number, i);  
+      console.log(`${number}^${i} = ${result}`);
+  }
+}
+
+let numberm =(3);
+let maxPower =(10);
+
+generatePowerTable(numberm, maxPower);
+
+
+
+// Expression
+
+let al = prompt("Enter  a:")
+let bl = prompt("Enter  b:")
+let cl = prompt("Enter  c:")
+
+let xl = al * bl - cl;
+
+console.log(xl)
+
+
