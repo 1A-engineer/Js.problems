@@ -406,7 +406,7 @@
 // console.log(findBiggestDigit(345));   
 
 
-// // Turn into upper letter
+// Turn into upper letter
 
 // let text = "Hello World!";
 // let resultt = text.toUpperCase();
@@ -456,16 +456,47 @@
 //     console.log("NO");
 // }
 
-// //  
-let too = prompt("Enter a number:"); 
-too = parseInt(too); 
 
-if (too >= 3 && too <= 5) {
-    console.log("tentssen");
-} else if (too >= 2 && too < 3) {
-    console.log("tentseegui");
-} else {
-    console.log("There is no such number");
-}
+// //  
+
+// let too = prompt("Enter a number:"); 
+// too = parseInt(too); 
+
+// if (too >= 3 && too <= 5) 
+//     console.log("tentssen");
+//  else if (too >= 2 && too < 3) 
+//     console.log("tentseegui");
+//  else 
+//     console.log("Yu yriad bgan be hoorhno?");
+
+    // Sesion
+
+//     let sar = prompt();
+
+//     if (sar >=2 && sar < 6) 
+//       console.log("It's spring")
+    
+//     if (sar >= 6 && sar <=9)
+//      console.log("It is summer")
+
+//  if (sar > 9 && sar <=11 )
+//   console.log( 'it is autumn')
+//  if ( sar == 12 || sar == 1){
+//   let st;
+//   st[0].charCodeAt()=st[0].charCodeAt()-32;
+//   console.log(st);
+//  }
+
+//   
+let str = "hello world";
+let targetLetter = 'd';
+
+
+let result = str.replace(targetLetter, targetLetter.toUpperCase());
+
+console.log(result); 
+
+
+
 
  
