@@ -497,6 +497,36 @@ let result = str.replace(targetLetter, targetLetter.toUpperCase());
 console.log(result); 
 
 
+// Greatest common divisor 
+function gcd(a, b) {
+  while (b !== 0) {
+    let temp = b;
+    b = a % b;
+    a = temp;
+  }
+  return a;
+}
+const num1 = 48;
+const num2 = 18;
 
+console.log("GCD:", gcd(num1, num2));
 
- 
+// Least common muptiple
+function gcd(a, b) {
+  while (b !== 0) {
+    let temp = b;
+    b = a % b;
+    a = temp;
+  }
+  return a;
+}
+
+function lcm(a, b) {
+  return (a * b) / gcd(a, b);
+}
+
+const numlcm1 = 12;
+const numlcm2 = 18;
+
+const result2 = lcm(numlcm1, numlcm2);
+console.log("LCM of", numlcm1, "and", numlcm2, "is", result2);
