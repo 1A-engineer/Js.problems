@@ -469,7 +469,7 @@
 //  else 
 //     console.log("Yu yriad bgan be hoorhno?");
 
-    // Sesion
+//     Sesion
 
 //     let sar = prompt();
 
@@ -487,14 +487,44 @@
 //   console.log(st);
 //  }
 
-//   
-let str = "hello world";
-let targetLetter = 'd';
+// //   
+// let str = "hello world";
+// let targetLetter = 'd';
 
 
-let result = str.replace(targetLetter, targetLetter.toUpperCase());
+// let result = str.replace(targetLetter, targetLetter.toUpperCase());
 
-console.log(result); 
+// console.log(result); 
+
+// Reverse a string
+function reverseString(str) {
+  return str.split('').reverse().join('');
+}
+
+console.log(reverseString("hello")); // Output: "olleh"
+
+// Check if a number is string
+
+function isPrime(num) {
+  if (num <= 1) return false;
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+      if (num % i === 0) return false;
+  }
+  return true;
+}
+
+console.log(isPrime(11)); // Output: true
+console.log(isPrime(10)); // Output: false
+
+//  Remove Duplicates from an Array
+
+function removeDuplicates(arr) {
+  return [...new Set(arr)];
+}
+
+console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5])); // Output: [1, 2, 3, 4, 5]
+
+
 
 
 // Greatest common divisor 
@@ -528,5 +558,8 @@ function lcm(a, b) {
 const numlcm1 = 12;
 const numlcm2 = 18;
 
-const result2 = lcm(numlcm1, numlcm2);
-console.log("LCM of", numlcm1, "and", numlcm2, "is", result2);
+const result23 = lcm(numlcm1, numlcm2);
+console.log("LCM of", numlcm1, "and", numlcm2, "is", result23);
+
+
+// 
