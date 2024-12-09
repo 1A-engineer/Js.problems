@@ -567,3 +567,17 @@ const exp2 = [2, 34, 4, 6, 7, 6];
 
 let new2 = exp1.reduce((old, cur) => (old + cur ))
 console.log(new2)
+
+const  exp3  = [2, 34, 4, 6, 7, 6];
+let new3 = exp3.findIndex(num => num > 10);
+console.log(new3);
+
+const exp4 = [2, 34, 4, 6, 7, 6];
+let new4 = exp4.indexOf(7);
+console.log(new4)
+
+const exp5 = [2, 34, 4, 6, 7, 6];
+let new5 = exp5.filter(num => num % 2  !==0);
+console.log(new5)
+let new6 = exp5.filter(num => num % 2  ===0);
+console.log(new6)
