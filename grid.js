@@ -248,21 +248,20 @@
 // console.log("Your deserved discount:", discount);
 // console.log("Total cost:", spending - discount);
 
-
-// // 7 Leap year 
+// // 7 Leap year
 
 // function isLeapYear(year) {
-//   if (year % 4 !== 0) return false; 
+//   if (year % 4 !== 0) return false;
 //   else if (year % 100 === 0) {
-//     if (year % 400 === 0) return true; 
-//     else return false; 
+//     if (year % 400 === 0) return true;
+//     else return false;
 //   }
-//   else return true; 
+//   else return true;
 // }
 // console.log(isLeapYear(2024)); // true
 // console.log(isLeapYear(1900)); // false
 // console.log(isLeapYear(2000)); // true
- 
+
 // // Add hundred n times.
 
 // function add100NTimes(n) {
@@ -276,7 +275,6 @@
 // let n = parseInt("Enter the number of times to add 100:",);
 // let result100 = add100NTimes(n);
 // console.log(`100 added ${n} times is: ${result100}`);
-
 
 // // Multiply number n times.
 // function mltiplynumberntimes(numbern, davtalt) {
@@ -306,8 +304,6 @@
 // let result99 = ntimesofa(atoo, repeatn);
 // console.log(`${atoo}'s  ${repeatn}st power is: ${result99}`)
 
-
-
 // // Multiplication table
 
 // function generateMultiplicationTable(number) {
@@ -319,12 +315,11 @@
 // let number = parseInt(5);
 // generateMultiplicationTable(number);
 
-
 // // Power of multiplication table
 
 // function generatePowerTable(number, maxPower) {
 //   for (let i = 1; i <= maxPower; i++) {
-//       let result = Math.pow(number, i);  
+//       let result = Math.pow(number, i);
 //       console.log(`${number}^${i} = ${result}`);
 //   }
 // }
@@ -333,8 +328,6 @@
 // let maxPower =(10);
 
 // generatePowerTable(numberm, maxPower);
-
-
 
 // // // Expression
 
@@ -346,28 +339,23 @@
 
 // // console.log(xl)
 
-
 // // The end of first page.
 
-
 // // RGB7582 - ЭЕШ
-
 
 // const numbersy = [40, 50, 92, 50, 40];
 
 // let namedNumbers = numbersy.map((num, index) => ({
-//     name: index + 1,  
+//     name: index + 1,
 //     value: num
 // }));
 // namedNumbers.sort((a, b) => b.value - a.value);
 
 // let sortedNames = namedNumbers.map(item => item.name);
 
-
 // sortedNames.forEach(name => {
-//     console.log(name);  
+//     console.log(name);
 // });
-
 
 // // Palindrome
 
@@ -388,8 +376,6 @@
 //   const numStr = num.toString();
 //   let maxDigit = 0;
 
-  
-
 //   for (let i = 0; i < numStr.length; i++) {
 //       const digit = parseInt(numStr[i]);
 
@@ -397,14 +383,13 @@
 //           maxDigit = digit;
 //       }
 //   }
-  
+
 //   return maxDigit;
 // }
 
-// console.log(findBiggestDigit(12345)); 
-// console.log(findBiggestDigit(9876));  
-// console.log(findBiggestDigit(345));   
-
+// console.log(findBiggestDigit(12345));
+// console.log(findBiggestDigit(9876));
+// console.log(findBiggestDigit(345));
 
 // Turn into upper letter
 
@@ -412,13 +397,12 @@
 // let resultt = text.toUpperCase();
 // console.log(resultt)
 
-
 // let input = "IOI";
 // for (let  i = 0; i < 3; i++) {
 //     console.log(input);
 // }
 
-// //  Classify odd  and even numbers 
+// //  Classify odd  and even numbers
 
 // const collector = [12, 42, 32, 41, 91, 12, 64, 22, 61, 59, 47];
 // let colevennumbers = [];
@@ -433,22 +417,19 @@
 // console.log("Even numbers:", colevennumbers);
 // console.log("Odd numbers:",  coloddnumbers);
 
-
-
 // // Which is more in quantity even or odd. If it is odd say "yes"; otherwise, say "no".
 
-// let bar = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; 
-// let evenCount = 0;  
-// let oddCount = 0;   
+// let bar = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let evenCount = 0;
+// let oddCount = 0;
 
 // for (let i = 0; i < bar.length; i++) {
 //     if (bar[i] % 2 === 0) {
-//         evenCount++;  
+//         evenCount++;
 //     } else {
-//         oddCount++; 
+//         oddCount++;
 //     }
 // }
-
 
 // if (oddCount > evenCount) {
 //     console.log("YES");
@@ -456,26 +437,25 @@
 //     console.log("NO");
 // }
 
+// //
 
-// //  
+// let too = prompt("Enter a number:");
+// too = parseInt(too);
 
-// let too = prompt("Enter a number:"); 
-// too = parseInt(too); 
-
-// if (too >= 3 && too <= 5) 
+// if (too >= 3 && too <= 5)
 //     console.log("tentssen");
-//  else if (too >= 2 && too < 3) 
+//  else if (too >= 2 && too < 3)
 //     console.log("tentseegui");
-//  else 
+//  else
 //     console.log("Yu yriad bgan be hoorhno?");
 
 //     // Sesion
 
 //     let sar = prompt();
 
-//     if (sar >=2 && sar < 6) 
+//     if (sar >=2 && sar < 6)
 //       console.log("It's spring")
-    
+
 //     if (sar >= 6 && sar <=9)
 //      console.log("It is summer")
 
@@ -487,18 +467,15 @@
 //   console.log(st);
 //  }
 
-// //   
+// //
 // let str = "hello world";
 // let targetLetter = 'd';
 
-
 // let result = str.replace(targetLetter, targetLetter.toUpperCase());
 
-// console.log(result); 
+// console.log(result);
 
-
-
-// // 2.2 
+// // 2.2
 
 // function findApartmentLocation(apartmentNumber, numFloors, apartmentsPerFloor, numEntrances) {
 
@@ -515,12 +492,10 @@
 // let result = findApartmentLocation(10, 5, 4, 2);
 // console.log(`Apartment 10 is in Entrance ${result.entrance}, Floor ${result.floor}`);
 
-
-// // 
+// //
 // const n = parseInt(prompt("the number of elenents:", 5));
 
 // const elements = prompt(1, 2, 3, 4, 5 ).split(' ').map(Number);
-
 
 // console.log(` ${n}`);
 // console.log(`${elements.join(', ')}`);
@@ -535,9 +510,7 @@
 
 // let hypotenuse = findHypotenuse(adjacent, opposite);
 
-// console.log("The length of the hypotenuse is: " + hypotenuse);  
-
-
+// console.log("The length of the hypotenuse is: " + hypotenuse);
 
 // // Gap between two point
 
@@ -547,37 +520,72 @@
 // let x1 = 2, y1 = 3;
 // let x2 = 5, y2 = 7;
 // let distance = calculateDistance(x1, y1, x2, y2);
-// console.log("The distance between the two points is: " + distance); 
-
+// console.log("The distance between the two points is: " + distance);
 
 // // Sort Numbers
 
 // let numberstosort = [10, 2, 35, 4, 57, 8];
 // numberstosort.sort((a, c) => a - c );
-// console.log(numberstosort); 
-
+// console.log(numberstosort);
 
 // Array methods
 
 const exp1 = [2, 34, 4, 6, 7, 6];
-let new1 = exp1.map( num => num * 2);
-console.log(new1)
-  
+let new1 = exp1.map((num) => num * 2);
+console.log(new1);
+
 const exp2 = [2, 34, 4, 6, 7, 6];
 
-let new2 = exp1.reduce((old, cur) => (old + cur ))
-console.log(new2)
+let new2 = exp1.reduce((old, cur) => old + cur);
+console.log(new2);
 
-const  exp3  = [2, 34, 4, 6, 7, 6];
-let new3 = exp3.findIndex(num => num > 10);
+const exp3 = [2, 34, 4, 6, 7, 6];
+let new3 = exp3.findIndex((num) => num > 10);
 console.log(new3);
 
 const exp4 = [2, 34, 4, 6, 7, 6];
 let new4 = exp4.indexOf(7);
-console.log(new4)
+console.log(new4);
 
 const exp5 = [2, 34, 4, 6, 7, 6];
-let new5 = exp5.filter(num => num % 2  !==0);
-console.log(new5)
-let new6 = exp5.filter(num => num % 2  ===0);
-console.log(new6)
+let new5 = exp5.filter((num) => num % 2 !== 0);
+console.log(new5);
+let new6 = exp5.filter((num) => num % 2 === 0);
+console.log(new6);
+
+// Function
+
+function convertToGPA(percentage) {
+  let gpa;
+  let grade;
+
+  if (percentage >= 90) {
+    gpa = 4.0;
+    grade = "A";
+  } else if (percentage >= 80) {
+    gpa = 3.7;
+    grade = "B";
+  } else if (percentage >= 70) {
+    gpa = 3.0;
+    grade = "C";
+  } else if (percentage >= 60) {
+    gpa = 2.0;
+    grade = "D";
+  } else if (percentage >= 50) {
+    gpa = 1.0;
+    grade = "E";
+  } else {
+    gpa = 0.0;
+    grade = "F";
+  }
+
+  return [gpa, grade];
+}
+
+const percentage = 85;
+const result = convertToGPA(percentage);
+
+const gpa = result[0];
+const grade = result[1];
+
+console.log(`Percentage: ${percentage}% => GPA: ${gpa} => Grade: ${grade}`);
