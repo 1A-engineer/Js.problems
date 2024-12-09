@@ -469,7 +469,7 @@
 //  else 
 //     console.log("Yu yriad bgan be hoorhno?");
 
-//     Sesion
+//     // Sesion
 
 //     let sar = prompt();
 
@@ -496,70 +496,74 @@
 
 // console.log(result); 
 
-// Reverse a string
-function reverseString(str) {
-  return str.split('').reverse().join('');
-}
-
-console.log(reverseString("hello")); // Output: "olleh"
-
-// Check if a number is string
-
-function isPrime(num) {
-  if (num <= 1) return false;
-  for (let i = 2; i <= Math.sqrt(num); i++) {
-      if (num % i === 0) return false;
-  }
-  return true;
-}
-
-console.log(isPrime(11)); // Output: true
-console.log(isPrime(10)); // Output: false
-
-//  Remove Duplicates from an Array
-
-function removeDuplicates(arr) {
-  return [...new Set(arr)];
-}
-
-console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5])); // Output: [1, 2, 3, 4, 5]
 
 
+// // 2.2 
+
+// function findApartmentLocation(apartmentNumber, numFloors, apartmentsPerFloor, numEntrances) {
+
+//   let apartmentsPerEntrance = numFloors * apartmentsPerFloor;
+
+//   let entranceNumber = Math.floor((apartmentNumber - 1) / apartmentsPerEntrance) + 1;
+
+//   let apartmentInEntrance = (apartmentNumber - 1) % apartmentsPerEntrance + 1;
+
+//   let floorNumber = Math.floor((apartmentInEntrance - 1) / apartmentsPerFloor) + 1;
+
+//   return { entrance: entranceNumber, floor: floorNumber };
+// }
+// let result = findApartmentLocation(10, 5, 4, 2);
+// console.log(`Apartment 10 is in Entrance ${result.entrance}, Floor ${result.floor}`);
 
 
-// Greatest common divisor 
-function gcd(a, b) {
-  while (b !== 0) {
-    let temp = b;
-    b = a % b;
-    a = temp;
-  }
-  return a;
-}
-const num1 = 48;
-const num2 = 18;
+// // 
+// const n = parseInt(prompt("the number of elenents:", 5));
 
-console.log("GCD:", gcd(num1, num2));
-
-// Least common muptiple
-function gcd(a, b) {
-  while (b !== 0) {
-    let temp = b;
-    b = a % b;
-    a = temp;
-  }
-  return a;
-}
-
-function lcm(a, b) {
-  return (a * b) / gcd(a, b);
-}
-
-const numlcm1 = 12;
-const numlcm2 = 18;
-
-const result23 = lcm(numlcm1, numlcm2);
-console.log("LCM of", numlcm1, "and", numlcm2, "is", result23);
+// const elements = prompt(1, 2, 3, 4, 5 ).split(' ').map(Number);
 
 
-// 
+// console.log(` ${n}`);
+// console.log(`${elements.join(', ')}`);
+
+// //  Hypotenuse
+
+// function findHypotenuse(adjacent, opposite) {
+//   return Math.sqrt(adjacent * adjacent + opposite * opposite);
+// }
+// let adjacent = 12;
+// let opposite = 15;
+
+// let hypotenuse = findHypotenuse(adjacent, opposite);
+
+// console.log("The length of the hypotenuse is: " + hypotenuse);  
+
+
+
+// // Gap between two point
+
+// function calculateDistance(x1, y1, x2, y2) {
+//   return Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);
+// }
+// let x1 = 2, y1 = 3;
+// let x2 = 5, y2 = 7;
+// let distance = calculateDistance(x1, y1, x2, y2);
+// console.log("The distance between the two points is: " + distance); 
+
+
+// // Sort Numbers
+
+// let numberstosort = [10, 2, 35, 4, 57, 8];
+// numberstosort.sort((a, c) => a - c );
+// console.log(numberstosort); 
+
+
+// Array methods
+
+const exp1 = [2, 34, 4, 6, 7, 6];
+let new1 = exp1.map( num => num * 2);
+console.log(new1)
+  
+const exp2 = [2, 34, 4, 6, 7, 6];
+
+let new2 = exp1.reduce((old, cur) => (old + cur ))
+console.log(new2)
