@@ -304,30 +304,29 @@
 // let result99 = ntimesofa(atoo, repeatn);
 // console.log(`${atoo}'s  ${repeatn}st power is: ${result99}`)
 
-// // Multiplication table
+// Multiplication table
 
-// function generateMultiplicationTable(number) {
-//   for (let i = 1; i <= 10; i++) {
-//       let result = number * i;
-//       console.log(`${number} * ${i} = ${result}`);
-//   }
-// }
-// let number = parseInt(5);
-// generateMultiplicationTable(number);
+function generateMultiplicationTable(number) {
+  for (let i = 1; i <= 10; i++) {
+      let result = number * i;
+      console.log(`${number} * ${i} = ${result}`);
+  }
+}
+let number = parseInt(5);
+generateMultiplicationTable(number);
 
-// // Power of multiplication table
+// Power of multiplication table
 
-// function generatePowerTable(number, maxPower) {
-//   for (let i = 1; i <= maxPower; i++) {
-//       let result = Math.pow(number, i);
-//       console.log(`${number}^${i} = ${result}`);
-//   }
-// }
+function generatePowerTable(number, maxPower) {
+  for (let i = 1; i <= maxPower; i++) {
+      let result = Math.pow(number, i);
+      console.log(`${number}^${i} = ${result}`);
+  }
+}
+let numberm =(3);
+let maxPower =(10);
 
-// let numberm =(3);
-// let maxPower =(10);
-
-// generatePowerTable(numberm, maxPower);
+generatePowerTable(numberm, maxPower);
 
 // // // Expression
 
@@ -367,8 +366,7 @@
 // }
 
 // console.log(palindromeCheck(121));
-// console.log(palindromeCheck(12321));
-// console.log(palindromeCheck(12345));
+
 
 // // Biggest digit in number
 
@@ -587,5 +585,124 @@ const result = convertToGPA(percentage);
 
 const gpa = result[0];
 const grade = result[1];
-
 console.log(`Percentage: ${percentage}% => GPA: ${gpa} => Grade: ${grade}`);
+
+
+
+// 
+
+
+function countOccurrences(arr, target) {
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === target) {
+      count++;
+    }
+  }
+
+  return count;
+}
+console.log(countOccurrences([1, 2, 3, 4, 2, 2, 5], 2));  
+console.log(countOccurrences(['apple', 'banana', 'orange', 'apple'], 'apple')); 
+console.log(countOccurrences([true, false, true, false, true], true));  
+console.log(countOccurrences([10, 20, 30, 40, 50], 100));  
+
+
+
+
+// --------------------------------------------------------------------------------***** >>    Leet code problems   << *****--------------------------------------------------------------------------------
+
+
+// Two sum
+
+var twoSum = function (nums, target) {
+  const map = new Map();
+  for (let i = 0; i < nums.length; i++) {
+      map.set(nums[i], i);
+  }
+  for (let i = 0; i < nums.length; i++) {
+      const complement = target - nums[i];
+      if (map.has(complement) && map.get(complement) !== i) {
+          return [i, map.get(complement)];
+      }
+  }
+  return [];
+};
+
+
+// 28. Find the Index of the First occurance in a String
+
+var strStr = function(haystack, needle) {
+  return haystack.indexOf(needle); 
+};
+console.log(strStr("hello", "ll"));  
+
+
+
+  //Prime number
+
+
+  function primenumber(num) {
+    if( num <=0 )
+    { return false;
+
+    }
+    if (num === 2 || num === 3)
+      {return false;
+
+      }
+    if (num % 2 === 0){
+      return false;
+    }
+    for (let i = 3; i <= Math.sqrt(num); i += 2) {
+      if (num % i === 0) {
+          return false; 
+      }
+    
+  }
+   return true;
+}
+   console.log(primenumber(29));  
+console.log(primenumber(25)); 
+console.log(primenumber(100)); 
+
+// Square root of (x)
+
+const num = prompt();
+let sqrt = (Math.floor(Math.sqrt(num)));
+console.log(sqrt);
+
+// Container with most water
+
+var maxArea = function(height) {
+  let left = 0;        
+  let right = height.length - 1;  
+  let maxWater = 0;       
+  
+  while (left < right) {
+
+      let width = right - left;
+      let h = Math.min(height[left], height[right]);
+      let area = width * h;
+      
+
+      maxWater = Math.max(maxWater, area);
+      
+  
+      if (height[left] < height[right]) {
+          left++;
+      } else {
+          right--;
+      }
+  }
+  
+  return maxWater;
+};
+
+let height1 = [1,8,6,2,5,4,8,3,7];
+console.log(maxArea(height1)); 
+
+
+let height2 = [1,1];
+console.log(maxArea(height2));  
+ 
