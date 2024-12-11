@@ -304,29 +304,29 @@
 // let result99 = ntimesofa(atoo, repeatn);
 // console.log(`${atoo}'s  ${repeatn}st power is: ${result99}`)
 
-// Multiplication table
+// // Multiplication table
 
-function generateMultiplicationTable(number) {
-  for (let i = 1; i <= 10; i++) {
-      let result = number * i;
-      console.log(`${number} * ${i} = ${result}`);
-  }
-}
-let number = parseInt(5);
-generateMultiplicationTable(number);
+// function generateMultiplicationTable(number) {
+//   for (let i = 1; i <= 10; i++) {
+//       let result = number * i;
+//       console.log(`${number} * ${i} = ${result}`);
+//   }
+// }
+// let number = parseInt(5);
+// generateMultiplicationTable(number);
 
-// Power of multiplication table
+// // Power of multiplication table
 
-function generatePowerTable(number, maxPower) {
-  for (let i = 1; i <= maxPower; i++) {
-      let result = Math.pow(number, i);
-      console.log(`${number}^${i} = ${result}`);
-  }
-}
-let numberm =(3);
-let maxPower =(10);
+// function generatePowerTable(number, maxPower) {
+//   for (let i = 1; i <= maxPower; i++) {
+//       let result = Math.pow(number, i);
+//       console.log(`${number}^${i} = ${result}`);
+//   }
+// }
+// let numberm =(3);
+// let maxPower =(10);
 
-generatePowerTable(numberm, maxPower);
+// generatePowerTable(numberm, maxPower);
 
 // // // Expression
 
@@ -526,183 +526,223 @@ generatePowerTable(numberm, maxPower);
 // numberstosort.sort((a, c) => a - c );
 // console.log(numberstosort);
 
-// Array methods
+// // Array methods
 
-const exp1 = [2, 34, 4, 6, 7, 6];
-let new1 = exp1.map((num) => num * 2);
-console.log(new1);
+// const exp1 = [2, 34, 4, 6, 7, 6];
+// let new1 = exp1.map((num) => num * 2);
+// console.log(new1);
 
-const exp2 = [2, 34, 4, 6, 7, 6];
+// const exp2 = [2, 34, 4, 6, 7, 6];
 
-let new2 = exp1.reduce((old, cur) => old + cur);
-console.log(new2);
+// let new2 = exp1.reduce((old, cur) => old + cur);
+// console.log(new2);
 
-const exp3 = [2, 34, 4, 6, 7, 6];
-let new3 = exp3.findIndex((num) => num > 10);
-console.log(new3);
+// const exp3 = [2, 34, 4, 6, 7, 6];
+// let new3 = exp3.findIndex((num) => num > 10);
+// console.log(new3);
 
-const exp4 = [2, 34, 4, 6, 7, 6];
-let new4 = exp4.indexOf(7);
-console.log(new4);
+// const exp4 = [2, 34, 4, 6, 7, 6];
+// let new4 = exp4.indexOf(7);
+// console.log(new4);
 
-const exp5 = [2, 34, 4, 6, 7, 6];
-let new5 = exp5.filter((num) => num % 2 !== 0);
-console.log(new5);
-let new6 = exp5.filter((num) => num % 2 === 0);
-console.log(new6);
+// const exp5 = [2, 34, 4, 6, 7, 6];
+// let new5 = exp5.filter((num) => num % 2 !== 0);
+// console.log(new5);
+// let new6 = exp5.filter((num) => num % 2 === 0);
+// console.log(new6);
 
-// Function
+// // Function
 
-function convertToGPA(percentage) {
-  let gpa;
-  let grade;
+// function convertToGPA(percentage) {
+//   let gpa;
+//   let grade;
 
-  if (percentage >= 90) {
-    gpa = 4.0;
-    grade = "A";
-  } else if (percentage >= 80) {
-    gpa = 3.7;
-    grade = "B";
-  } else if (percentage >= 70) {
-    gpa = 3.0;
-    grade = "C";
-  } else if (percentage >= 60) {
-    gpa = 2.0;
-    grade = "D";
-  } else if (percentage >= 50) {
-    gpa = 1.0;
-    grade = "E";
-  } else {
-    gpa = 0.0;
-    grade = "F";
-  }
+//   if (percentage >= 90) {
+//     gpa = 4.0;
+//     grade = "A";
+//   } else if (percentage >= 80) {
+//     gpa = 3.7;
+//     grade = "B";
+//   } else if (percentage >= 70) {
+//     gpa = 3.0;
+//     grade = "C";
+//   } else if (percentage >= 60) {
+//     gpa = 2.0;
+//     grade = "D";
+//   } else if (percentage >= 50) {
+//     gpa = 1.0;
+//     grade = "E";
+//   } else {
+//     gpa = 0.0;
+//     grade = "F";
+//   }
 
-  return [gpa, grade];
-}
+//   return [gpa, grade];
+// }
 
-const percentage = 85;
-const result = convertToGPA(percentage);
+// const percentage = 85;
+// const result = convertToGPA(percentage);
 
-const gpa = result[0];
-const grade = result[1];
-console.log(`Percentage: ${percentage}% => GPA: ${gpa} => Grade: ${grade}`);
-
-
-
-// 
-
-
-function countOccurrences(arr, target) {
-  let count = 0;
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === target) {
-      count++;
-    }
-  }
-
-  return count;
-}
-console.log(countOccurrences([1, 2, 3, 4, 2, 2, 5], 2));  
-console.log(countOccurrences(['apple', 'banana', 'orange', 'apple'], 'apple')); 
-console.log(countOccurrences([true, false, true, false, true], true));  
-console.log(countOccurrences([10, 20, 30, 40, 50], 100));  
+// const gpa = result[0];
+// const grade = result[1];
+// console.log(`Percentage: ${percentage}% => GPA: ${gpa} => Grade: ${grade}`);
 
 
 
-
-// --------------------------------------------------------------------------------***** >>    Leet code problems   << *****--------------------------------------------------------------------------------
-
-
-// Two sum
-
-var twoSum = function (nums, target) {
-  const map = new Map();
-  for (let i = 0; i < nums.length; i++) {
-      map.set(nums[i], i);
-  }
-  for (let i = 0; i < nums.length; i++) {
-      const complement = target - nums[i];
-      if (map.has(complement) && map.get(complement) !== i) {
-          return [i, map.get(complement)];
-      }
-  }
-  return [];
-};
+// // 
 
 
-// 28. Find the Index of the First occurance in a String
+// function countOccurrences(arr, target) {
+//   let count = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === target) {
+//       count++;
+//     }
+//   }
 
-var strStr = function(haystack, needle) {
-  return haystack.indexOf(needle); 
-};
-console.log(strStr("hello", "ll"));  
+//   return count;
+// }
+// console.log(countOccurrences([1, 2, 3, 4, 2, 2, 5], 2));  
+// console.log(countOccurrences(['apple', 'banana', 'orange', 'apple'], 'apple')); 
+// console.log(countOccurrences([true, false, true, false, true], true));  
+// console.log(countOccurrences([10, 20, 30, 40, 50], 100));  
 
 
 
-  //Prime number
+
+// // --------------------------------------------------------------------------------***** >>    Leet code problems   << *****--------------------------------------------------------------------------------
 
 
-  function primenumber(num) {
-    if( num <=0 )
-    { return false;
+// // Two sum
 
-    }
-    if (num === 2 || num === 3)
-      {return false;
+// var twoSum = function (nums, target) {
+//   const map = new Map();
+//   for (let i = 0; i < nums.length; i++) {
+//       map.set(nums[i], i);
+//   }
+//   for (let i = 0; i < nums.length; i++) {
+//       const complement = target - nums[i];
+//       if (map.has(complement) && map.get(complement) !== i) {
+//           return [i, map.get(complement)];
+//       }
+//   }
+//   return [];
+// };
 
-      }
-    if (num % 2 === 0){
-      return false;
-    }
-    for (let i = 3; i <= Math.sqrt(num); i += 2) {
-      if (num % i === 0) {
-          return false; 
-      }
+
+// // 28. Find the Index of the First occurance in a String
+
+// var strStr = function(haystack, needle) {
+//   return haystack.indexOf(needle); 
+// };
+// console.log(strStr("hello", "ll"));  
+
+
+
+//   //Prime number
+
+
+//   function primenumber(num) {
+//     if( num <=0 )
+//     { return false;
+
+//     }
+//     if (num === 2 || num === 3)
+//       {return false;
+
+//       }
+//     if (num % 2 === 0){
+//       return false;
+//     }
+//     for (let i = 3; i <= Math.sqrt(num); i += 2) {
+//       if (num % i === 0) {
+//           return false; 
+//       }
     
-  }
-   return true;
-}
-   console.log(primenumber(29));  
-console.log(primenumber(25)); 
-console.log(primenumber(100)); 
+//   }
+//    return true;
+// }
+//    console.log(primenumber(29));  
+// console.log(primenumber(25)); 
+// console.log(primenumber(100)); 
 
-// Square root of (x)
+// // Square root of (x)
 
-const num = prompt();
-let sqrt = (Math.floor(Math.sqrt(num)));
-console.log(sqrt);
-
-// Container with most water
-
-var maxArea = function(height) {
-  let left = 0;        
-  let right = height.length - 1;  
-  let maxWater = 0;       
-  
-  while (left < right) {
-
-      let width = right - left;
-      let h = Math.min(height[left], height[right]);
-      let area = width * h;
-      
-
-      maxWater = Math.max(maxWater, area);
-      
-  
-      if (height[left] < height[right]) {
-          left++;
-      } else {
-          right--;
-      }
-  }
-  
-  return maxWater;
-};
-
-let height1 = [1,8,6,2,5,4,8,3,7];
-console.log(maxArea(height1)); 
+// const num = ;
+// let sqrt = (Math.floor(Math.sqrt(num)));
+// console.log(sqrt);
 
 
-let height2 = [1,1];
-console.log(maxArea(height2));  
+
+                                                                                                     
+// // Container with most water
+
+// var maxArea = function(height) {
+//   let left = 0;        
+//   let right = height.length - 1;  
+//   let maxWater = 0;       
+//   while (left < right) {
+//       let width = right - left;
+//       let h = Math.min(height[left], height[right]);
+//       let area = width * h;
+//       maxWater = Math.max(maxWater, area);
+//       if (height[left] < height[right]) {
+//           left++;
+//       } else {
+//           right--;
+//       }
+//   }
+//   return maxWater;
+// };
+// let height1 = [1,8,6,2,5,4,8,3,7];
+// console.log(maxArea(height1)); 
+// let height2 = [1,1];
+// console.log(maxArea(height2));  
+
+
  
+
+// // Add digits
+
+// function checkNumber() {
+//   const numb = Number(prompt());
+//   if (numb > Math.pow(2, 31) - 1 || numb < -Math.pow(2, 31)) {
+//       return 0; 
+//   }
+
+//   let sum = 0;
+//   const array = [1, 2, 3, 4, 5];
+//   for (let i = 0; i < array.length; i++) {
+//       sum += array[i];
+//   }
+  
+//   return sum;  
+// }
+
+// console.log(checkNumber());
+
+
+// Email transformation
+
+function transformEmail(mail) {
+
+
+  let username = mail.split('@')[0];   
+  let parts = username.split('.'); 
+     
+  
+  
+  let firstName = parts[parts.length - 1].charAt(0).toUpperCase() + parts[parts.length - 1].slice(1); 
+
+  let lastName = parts[0].charAt(0).toUpperCase() + parts[0].slice(1); 
+
+
+  return `${firstName}. ${lastName}`;
+}
+
+console.log(transformEmail('bat.a@gmail.com'));  
+console.log(transformEmail('bat.kh@gmail.com'));  
+
+
+
+
